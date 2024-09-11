@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="color:chartreuse; font-size: 300%;">BTCC</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+</head>
+<body>
+    <Header>
+        <div class="container">
+            <div id="brandname">
+                  BTCC
+            </div>
+            <h2>Banglish Toxic Comment Classifier</h2>
+
+        </div>
+    </Header>
+    <p style="color:blue; font-size:20; text-align:center;"> <b>Result</b></p>
+    <div class="results">
+        {% if prediction == 0%}
+        <h2 style="color:green">Not Toxic(Good Comment)</h2>
+        {% elif prediction == 1%}
+        <h2 style="color:red">Toxic Comment</h2>
+        {% endif %}
+
+
+    </div>
+
+    
+</body>
+</html>

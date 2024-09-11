@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="color:chartreuse; font-size: 300%;">BTCC</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+</head>
+
+<body>
+    <Header>
+        <div class="container">
+            <div id="brandname">
+                  BTCC
+            </div>
+            <h2>Banglish Toxic Comment Classifier</h2>
+
+        </div>
+    </Header>
+    <div class="ml_container">
+        <style>
+            h1 {
+              color: blue;
+              font-family: verdana;
+              font-size: 300%;
+            }
+            p {
+              color: red;
+              font-family: courier;
+              font-size: 160%;
+            }
+            </style>
+        <form action="{{url_for('predict')}}" method="POST">
+            <p>Enter Comment</p>
+            <textarea name="comment" cols="50" rows="10"></textarea>
+            <br/>
+            <input type="submit" class="btn-info" value="predict">
+        </form>
+    </div>
+    
+</body>
+</html>
